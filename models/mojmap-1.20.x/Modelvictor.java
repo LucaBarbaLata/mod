@@ -65,7 +65,7 @@ public class Modelvictor<T extends Entity> extends EntityModel<T> {
 		this.c.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.c.xRot = headPitch / (180F / (float) Math.PI);
 		this.pd.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
-		this.ms.xRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
-		this.md.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
+		this.ms.yRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
+		this.md.yRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
 	}
 }

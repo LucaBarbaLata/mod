@@ -30,7 +30,7 @@ public class ModModEntities {
 	public static final RegistryObject<EntityType<VictorEntity>> VICTOR = register("victor",
 			EntityType.Builder.<VictorEntity>of(VictorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VictorEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(3f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

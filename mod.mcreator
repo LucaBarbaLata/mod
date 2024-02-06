@@ -83,9 +83,40 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mod/client/renderer/VictorRenderer.java",
-          "src/main/java/net/mcreator/mod/entity/VictorEntity.java",
+          "src/main/resources/assets/mod/models/item/victor_spawn_egg.json",
           "src/main/resources/data/mod/forge/biome_modifier/victor_biome_modifier.json",
-          "src/main/resources/assets/mod/models/item/victor_spawn_egg.json"
+          "src/main/java/net/mcreator/mod/entity/VictorEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "WhenVictorDies",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_victor_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mod/procedures/WhenVictorDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }

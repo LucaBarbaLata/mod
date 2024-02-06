@@ -10,7 +10,7 @@ import net.mcreator.mod.client.model.Modelvictor;
 
 public class VictorRenderer extends MobRenderer<VictorEntity, Modelvictor<VictorEntity>> {
 	public VictorRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelvictor(context.bakeLayer(Modelvictor.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelvictor(context.bakeLayer(Modelvictor.LAYER_LOCATION)), 3f);
 	}
 
 	@Override
