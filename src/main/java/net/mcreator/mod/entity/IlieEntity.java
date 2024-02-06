@@ -20,6 +20,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
@@ -74,6 +75,13 @@ public class IlieEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.DROWN))
+			return false;
+		return super.hurt(damagesource, amount);
 	}
 
 	public static void init() {

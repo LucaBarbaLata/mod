@@ -90,7 +90,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,

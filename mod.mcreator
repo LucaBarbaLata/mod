@@ -35,8 +35,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mod/entity/IlieEntity.java",
-          "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
           "src/main/resources/assets/mod/models/item/ilie_spawn_egg.json",
+          "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
           "src/main/java/net/mcreator/mod/client/renderer/IlieRenderer.java"
         ]
       }
@@ -165,13 +165,13 @@
   "language_map": {
     "en_us": {
       "entity.mod.anghel": "Anghel",
-      "item.mod.super_hot": "Super Hot",
-      "item_group.mod.mod": "Mod",
-      "block.mod.trash": "Pietre",
       "item.mod.anghel_spawn_egg": "Anghel Spawn Egg",
       "item.mod.ilie_spawn_egg": "Ilie Spawn Egg",
+      "item.mod.super_hot": "Super Hot",
       "entity.mod.ilie": "Ilie",
+      "item_group.mod.mod": "Mod",
       "subtitles.superhot": "Super Hot",
+      "block.mod.trash": "Pietre",
       "entity.minecraft.villager.mod.pietrar": "Pietrar",
       "item.mod.super_hot.desc": "SUPER HOT BABY YEAHHH"
     }
