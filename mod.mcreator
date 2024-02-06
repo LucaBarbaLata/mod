@@ -1,22 +1,22 @@
 {
   "mod_elements": [
     {
-      "name": "A",
-      "type": "recipe",
+      "name": "Mod",
+      "type": "tab",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "a",
+      "registry_name": "mod",
       "metadata": {
-        "files": [
-          "src/main/resources/data/mod/recipes/a.json"
-        ]
+        "files": []
       }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item_group.mod.mod": "Mod"
+    }
   },
   "foldersRoot": {
     "name": "~",
