@@ -135,6 +135,45 @@
           "src/main/java/net/mcreator/mod/client/renderer/AnghelRenderer.java"
         ]
       }
+    },
+    {
+      "name": "CraftIlie",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_ilie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_ilie.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftVictor",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_victor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_victor.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftPietre",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_pietre",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_pietre.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
