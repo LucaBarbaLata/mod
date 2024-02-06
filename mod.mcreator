@@ -119,6 +119,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Anghel",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anghel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/forge/biome_modifier/anghel_biome_modifier.json",
+          "src/main/resources/assets/mod/models/item/anghel_spawn_egg.json",
+          "src/main/java/net/mcreator/mod/entity/AnghelEntity.java",
+          "src/main/java/net/mcreator/mod/client/renderer/AnghelRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -134,14 +150,16 @@
   ],
   "language_map": {
     "en_us": {
-      "item.mod.ilie_spawn_egg": "Ilie Spawn Egg",
+      "entity.mod.anghel": "Anghel",
       "item.mod.victor_spawn_egg": "Victor Spawn Egg",
       "item.mod.super_hot": "Super Hot",
       "entity.mod.victor": "Victor",
-      "entity.mod.ilie": "Ilie",
       "item_group.mod.mod": "Mod",
-      "subtitles.superhot": "Super Hot",
       "block.mod.trash": "Pietre",
+      "item.mod.anghel_spawn_egg": "Anghel Spawn Egg",
+      "item.mod.ilie_spawn_egg": "Ilie Spawn Egg",
+      "entity.mod.ilie": "Ilie",
+      "subtitles.superhot": "Super Hot",
       "entity.minecraft.villager.mod.pietrar": "Pietrar",
       "item.mod.super_hot.desc": "SUPER HOT BABY YEAHHH"
     }

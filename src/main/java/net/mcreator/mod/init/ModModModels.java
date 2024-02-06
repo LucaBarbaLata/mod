@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mod.client.model.Modelvictor;
+import net.mcreator.mod.client.model.Modelangheloasa;
 import net.mcreator.mod.client.model.ModelIlie;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -18,5 +19,6 @@ public class ModModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelIlie.LAYER_LOCATION, ModelIlie::createBodyLayer);
 		event.registerLayerDefinition(Modelvictor.LAYER_LOCATION, Modelvictor::createBodyLayer);
+		event.registerLayerDefinition(Modelangheloasa.LAYER_LOCATION, Modelangheloasa::createBodyLayer);
 	}
 }
