@@ -1,0 +1,43 @@
+{
+  "mod_elements": [
+    {
+      "name": "A",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/a.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mod",
+    "modName": "mod",
+    "version": "1.0.0",
+    "author": "luca, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.mod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}
