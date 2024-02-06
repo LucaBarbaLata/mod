@@ -20,8 +20,8 @@
       "registry_name": "super_hot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mod/item/SuperHotItem.java",
-          "src/main/resources/assets/mod/models/item/super_hot.json"
+          "src/main/resources/assets/mod/models/item/super_hot.json",
+          "src/main/java/net/mcreator/mod/item/SuperHotItem.java"
         ]
       }
     },
@@ -35,8 +35,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mod/entity/IlieEntity.java",
-          "src/main/resources/assets/mod/models/item/ilie_spawn_egg.json",
           "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
+          "src/main/resources/assets/mod/models/item/ilie_spawn_egg.json",
           "src/main/java/net/mcreator/mod/client/renderer/IlieRenderer.java"
         ]
       }
@@ -50,13 +50,13 @@
       "registry_name": "trash",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mod/models/item/trash.json",
-          "src/main/resources/data/mod/worldgen/configured_feature/trash.json",
+          "src/main/resources/data/mod/forge/biome_modifier/trash_biome_modifier.json",
           "src/main/resources/assets/mod/blockstates/trash.json",
+          "src/main/resources/assets/mod/models/block/trash.json",
+          "src/main/resources/data/mod/worldgen/configured_feature/trash.json",
           "src/main/java/net/mcreator/mod/block/TrashBlock.java",
           "src/main/resources/data/mod/worldgen/placed_feature/trash.json",
-          "src/main/resources/assets/mod/models/block/trash.json",
-          "src/main/resources/data/mod/forge/biome_modifier/trash_biome_modifier.json"
+          "src/main/resources/assets/mod/models/item/trash.json"
         ]
       }
     },
@@ -77,15 +77,15 @@
       "name": "Victor",
       "type": "livingentity",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "victor",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mod/client/renderer/VictorRenderer.java",
-          "src/main/resources/assets/mod/models/item/victor_spawn_egg.json",
+          "src/main/java/net/mcreator/mod/entity/VictorEntity.java",
           "src/main/resources/data/mod/forge/biome_modifier/victor_biome_modifier.json",
-          "src/main/java/net/mcreator/mod/entity/VictorEntity.java"
+          "src/main/resources/assets/mod/models/item/victor_spawn_egg.json"
         ]
       }
     },
