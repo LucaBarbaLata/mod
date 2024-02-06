@@ -149,23 +149,6 @@
           "src/main/resources/data/mod/recipes/craft_pietre.json"
         ]
       }
-    },
-    {
-      "name": "Victor",
-      "type": "livingentity",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "victor",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mod/client/renderer/VictorRenderer.java",
-          "src/main/java/net/mcreator/mod/entity/VictorEntity.java",
-          "src/main/java/net/mcreator/mod/entity/VictorEntityProjectile.java",
-          "src/main/resources/data/mod/forge/biome_modifier/victor_biome_modifier.json",
-          "src/main/resources/assets/mod/models/item/victor_spawn_egg.json"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -182,9 +165,7 @@
   "language_map": {
     "en_us": {
       "entity.mod.anghel": "Anghel",
-      "item.mod.victor_spawn_egg": "Victor Spawn Egg",
       "item.mod.super_hot": "Super Hot",
-      "entity.mod.victor": "Victor",
       "item_group.mod.mod": "Mod",
       "block.mod.trash": "Pietre",
       "item.mod.anghel_spawn_egg": "Anghel Spawn Egg",
