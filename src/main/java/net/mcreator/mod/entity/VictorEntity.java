@@ -40,6 +40,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mod.procedures.WhenVictorDiesProcedure;
 import net.mcreator.mod.init.ModModEntities;
 
 public class VictorEntity extends Monster {
@@ -115,6 +116,12 @@ public class VictorEntity extends Monster {
 		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		WhenVictorDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
