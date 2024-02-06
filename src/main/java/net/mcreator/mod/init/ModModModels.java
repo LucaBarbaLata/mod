@@ -16,5 +16,6 @@ public class ModModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelIlie.LAYER_LOCATION, ModelIlie::createBodyLayer);
+		event.registerLayerDefinition(Modelvictor.LAYER_LOCATION, Modelvictor::createBodyLayer);
 	}
 }
