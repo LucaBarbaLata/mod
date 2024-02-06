@@ -35,8 +35,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mod/entity/IlieEntity.java",
-          "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
           "src/main/resources/assets/mod/models/item/ilie_spawn_egg.json",
+          "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
           "src/main/java/net/mcreator/mod/client/renderer/IlieRenderer.java"
         ]
       }

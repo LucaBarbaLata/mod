@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Ilie",
-    "mobLabel": "Ilie",
+    "mobLabel": "",
     "mobModelName": "ModelIlie",
     "mobModelTexture": "texture.png",
     "transparentModelCondition": {
@@ -83,7 +83,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": true,
+    "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
