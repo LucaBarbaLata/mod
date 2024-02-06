@@ -61,12 +61,11 @@ public class Modelvictor<T extends Entity> extends EntityModel<T> {
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
-		this.ps.yRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
+		this.ps.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.c.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.c.xRot = headPitch / (180F / (float) Math.PI);
-		this.pd.zRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
-		this.t.yRot = headPitch / (180F / (float) Math.PI);
-		this.ms.zRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
-		this.md.xRot = headPitch / (180F / (float) Math.PI);
+		this.pd.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.ms.xRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
+		this.md.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
 	}
 }
