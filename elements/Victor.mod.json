@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Victor",
-    "mobLabel": "",
+    "mobLabel": "Victor Piticu",
     "mobModelName": "Modelvictor",
     "mobModelTexture": "victor.png",
     "transparentModelCondition": {
