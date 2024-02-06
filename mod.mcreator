@@ -68,7 +68,9 @@
       "locked_code": false,
       "registry_name": "pietrar",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/assets/mod/textures/entity/villager/profession/pietrar.png.mcmeta"
+        ]
       }
     }
   ],

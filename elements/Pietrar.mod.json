@@ -9,7 +9,7 @@
     "actionSound": {
       "value": "ambient.cave"
     },
-    "hat": "None",
+    "hat": "Full",
     "professionTextureFile": "villager_v2.png",
     "zombifiedProfessionTextureFile": "texture.png"
   }
