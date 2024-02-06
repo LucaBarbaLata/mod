@@ -39,7 +39,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mod.procedures.WhenVictorDiesProcedure;
@@ -56,8 +55,6 @@ public class VictorEntity extends PathfinderMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Victor Piticu"));
-		setCustomNameVisible(true);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 

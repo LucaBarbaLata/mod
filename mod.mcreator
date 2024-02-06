@@ -102,6 +102,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -129,8 +133,8 @@
       "registry_name": "anghel",
       "metadata": {
         "files": [
-          "src/main/resources/data/mod/forge/biome_modifier/anghel_biome_modifier.json",
           "src/main/resources/assets/mod/models/item/anghel_spawn_egg.json",
+          "src/main/resources/data/mod/forge/biome_modifier/anghel_biome_modifier.json",
           "src/main/java/net/mcreator/mod/entity/AnghelEntity.java",
           "src/main/java/net/mcreator/mod/client/renderer/AnghelRenderer.java"
         ]
