@@ -34,6 +34,7 @@ public class ModModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ModModItems.ILIE_SPAWN_EGG.get());
+			tabData.accept(ModModItems.VICTOR_SPAWN_EGG.get());
 		}
 	}
 }
