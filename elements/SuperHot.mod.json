@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Super Hot",
+    "rarity": "COMMON",
+    "texture": "superhot",
+    "description": "SUPER HOT BABY YEAHHH",
+    "creativeTab": {
+      "value": "CUSTOM:Mod"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:superhot"
+    },
+    "lengthInTicks": 6000,
+    "analogOutput": 0
+  }
+}
