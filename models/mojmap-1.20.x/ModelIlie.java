@@ -74,11 +74,11 @@ public class ModelIlie<T extends Entity> extends EntityModel<T> {
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
-		this.PS.zRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
+		this.PS.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.CAP.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.CAP.xRot = headPitch / (180F / (float) Math.PI);
-		this.PD.zRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
-		this.MS.zRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
-		this.MD.zRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
+		this.PD.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.MS.xRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
+		this.MD.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
 	}
 }
