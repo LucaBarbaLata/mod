@@ -149,6 +149,19 @@
           "src/main/resources/data/mod/recipes/craft_ilie.json"
         ]
       }
+    },
+    {
+      "name": "CraftPietre",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_pietre",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_pietre.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
