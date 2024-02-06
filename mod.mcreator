@@ -70,10 +70,9 @@
   "workspaceSettings": {
     "modid": "mod",
     "modName": "mod",
-    "version": "1.0.0",
-    "author": "luca, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "version": "2.3.5",
+    "author": "Luca-rickrolled-himself",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
