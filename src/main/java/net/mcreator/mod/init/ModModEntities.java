@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.mod.entity.VictorEntity;
 import net.mcreator.mod.entity.IlieEntity;
 import net.mcreator.mod.entity.AnghelEntity;
 import net.mcreator.mod.ModMod;
@@ -31,6 +32,10 @@ public class ModModEntities {
 			EntityType.Builder.<AnghelEntity>of(AnghelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AnghelEntity::new)
 
 					.sized(1f, 1.8f));
+	public static final RegistryObject<EntityType<VictorEntity>> VICTOR = register("victor",
+			EntityType.Builder.<VictorEntity>of(VictorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VictorEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,6 +46,7 @@ public class ModModEntities {
 		event.enqueueWork(() -> {
 			IlieEntity.init();
 			AnghelEntity.init();
+			VictorEntity.init();
 		});
 	}
 
@@ -48,5 +54,6 @@ public class ModModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ILIE.get(), IlieEntity.createAttributes().build());
 		event.put(ANGHEL.get(), AnghelEntity.createAttributes().build());
+		event.put(VICTOR.get(), VictorEntity.createAttributes().build());
 	}
 }
