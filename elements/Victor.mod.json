@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Ilie",
+    "mobName": "Victor",
     "mobLabel": "",
-    "mobModelName": "ModelIlie",
-    "mobModelTexture": "texture.png",
+    "mobModelName": "Modelvictor",
+    "mobModelTexture": "victor.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -22,9 +22,9 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelWidth": 0.4,
+    "modelHeight": 0.4,
+    "modelShadowSize": 0.4,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -42,22 +42,22 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "equipmentOffHand": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "equipmentHelmet": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "Items.SUSPICIOUS_STEW"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
@@ -78,19 +78,19 @@
     "pushedByFluids": {
       "fixedValue": true
     },
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": false,
-    "canControlForward": false,
-    "canControlStrafe": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": true,
+    "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -117,13 +117,13 @@
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": {
-      "value": ""
+      "value": "Items.DIAMOND_SWORD"
     },
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,

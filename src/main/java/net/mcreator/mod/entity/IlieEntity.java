@@ -7,6 +7,8 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -19,7 +21,9 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
@@ -39,6 +43,12 @@ public class IlieEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.SUSPICIOUS_STEW));
+		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.SUSPICIOUS_STEW));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.SUSPICIOUS_STEW));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.SUSPICIOUS_STEW));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.SUSPICIOUS_STEW));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.SUSPICIOUS_STEW));
 	}
 
 	@Override
@@ -74,6 +84,13 @@ public class IlieEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.DROWN))
+			return false;
+		return super.hurt(damagesource, amount);
 	}
 
 	public static void init() {
