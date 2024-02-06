@@ -23,6 +23,7 @@ import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -43,7 +44,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mod.procedures.WhenVictorDiesProcedure;
 import net.mcreator.mod.init.ModModEntities;
 
-public class VictorEntity extends Monster {
+public class VictorEntity extends PathfinderMob {
 	public VictorEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ModModEntities.VICTOR.get(), world);
 	}
