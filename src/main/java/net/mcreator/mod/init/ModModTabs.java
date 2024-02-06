@@ -24,6 +24,7 @@ public class ModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> MOD = REGISTRY.register("mod", () -> CreativeModeTab.builder().title(Component.translatable("item_group.mod.mod")).icon(() -> new ItemStack(Blocks.BELL)).displayItems((parameters, tabData) -> {
 		tabData.accept(ModModItems.SUPER_HOT.get());
+		tabData.accept(ModModBlocks.TRASH.get().asItem());
 	})
 
 			.build());

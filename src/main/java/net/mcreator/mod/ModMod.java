@@ -29,10 +29,12 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.mod.init.ModModVillagerProfessions;
 import net.mcreator.mod.init.ModModTabs;
 import net.mcreator.mod.init.ModModSounds;
 import net.mcreator.mod.init.ModModItems;
 import net.mcreator.mod.init.ModModEntities;
+import net.mcreator.mod.init.ModModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,11 +54,14 @@ public class ModMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModModSounds.REGISTRY.register(bus);
+		ModModBlocks.REGISTRY.register(bus);
 
 		ModModItems.REGISTRY.register(bus);
 		ModModEntities.REGISTRY.register(bus);
 
 		ModModTabs.REGISTRY.register(bus);
+
+		ModModVillagerProfessions.PROFESSIONS.register(bus);
 
 	}
 

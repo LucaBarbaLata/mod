@@ -40,6 +40,36 @@
           "src/main/java/net/mcreator/mod/client/renderer/IlieRenderer.java"
         ]
       }
+    },
+    {
+      "name": "Trash",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod/models/item/trash.json",
+          "src/main/resources/data/mod/worldgen/configured_feature/trash.json",
+          "src/main/resources/assets/mod/blockstates/trash.json",
+          "src/main/java/net/mcreator/mod/block/TrashBlock.java",
+          "src/main/resources/data/mod/worldgen/placed_feature/trash.json",
+          "src/main/resources/assets/mod/models/block/trash.json",
+          "src/main/resources/data/mod/forge/biome_modifier/trash_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Pietrar",
+      "type": "villagerprofession",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pietrar",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -60,6 +90,8 @@
       "entity.mod.ilie": "Ilie",
       "item_group.mod.mod": "Mod",
       "subtitles.superhot": "Super Hot",
+      "block.mod.trash": "Pietre",
+      "entity.minecraft.villager.mod.pietrar": "Pietrar",
       "item.mod.super_hot.desc": "SUPER HOT BABY YEAHHH"
     }
   },

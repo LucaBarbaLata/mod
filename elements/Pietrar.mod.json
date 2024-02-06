@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Pietrar",
+    "pointOfInterest": {
+      "value": "CUSTOM:Trash"
+    },
+    "actionSound": {
+      "value": "ambient.cave"
+    },
+    "hat": "None",
+    "professionTextureFile": "villager_v2.png",
+    "zombifiedProfessionTextureFile": "texture.png"
+  }
+}
