@@ -3,19 +3,46 @@
     {
       "name": "Mod",
       "type": "tab",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mod",
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "SuperHot",
+      "type": "musicdisc",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_hot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mod/item/SuperHotItem.java",
+          "src/main/resources/assets/mod/models/item/super_hot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "superhot",
+      "files": [
+        "spotify-downloader.com_-superhot-_hyperhot-mix_"
+      ],
+      "category": "record",
+      "subtitle": "Super Hot"
+    }
+  ],
   "language_map": {
     "en_us": {
-      "item_group.mod.mod": "Mod"
+      "item.mod.super_hot": "Super Hot",
+      "item_group.mod.mod": "Mod",
+      "subtitles.superhot": "Super Hot",
+      "item.mod.super_hot.desc": "SUPER HOT BABY YEAHHH"
     }
   },
   "foldersRoot": {
