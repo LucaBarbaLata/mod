@@ -136,6 +136,19 @@
           "src/main/resources/data/mod/recipes/craft_victor.json"
         ]
       }
+    },
+    {
+      "name": "CraftIlie",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_ilie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_ilie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
