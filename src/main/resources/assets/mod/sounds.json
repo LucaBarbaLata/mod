@@ -1,0 +1,11 @@
+{
+  "superhot": {
+    "subtitle": "subtitles.superhot",
+    "sounds": [
+      {
+        "name": "mod:spotify-downloader.com_-superhot-_hyperhot-mix_",
+        "stream": true
+      }
+    ]
+  }
+}
