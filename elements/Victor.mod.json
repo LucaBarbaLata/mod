@@ -22,9 +22,9 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
-    "modelWidth": 3.0,
-    "modelHeight": 3.0,
-    "modelShadowSize": 3.0,
+    "modelWidth": 0.2,
+    "modelHeight": 0.2,
+    "modelShadowSize": 0.2,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
