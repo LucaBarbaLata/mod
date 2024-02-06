@@ -42,22 +42,22 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "equipmentOffHand": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "Items.SUSPICIOUS_STEW"
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
