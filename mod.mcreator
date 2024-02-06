@@ -123,6 +123,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "CraftVictor",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_victor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_victor.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
