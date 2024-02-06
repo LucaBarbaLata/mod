@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mod.entity.VictorEntity;
 import net.mcreator.mod.entity.IlieEntity;
 import net.mcreator.mod.entity.AnghelEntity;
 import net.mcreator.mod.ModMod;
@@ -28,10 +27,6 @@ public class ModModEntities {
 			EntityType.Builder.<IlieEntity>of(IlieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IlieEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<VictorEntity>> VICTOR = register("victor",
-			EntityType.Builder.<VictorEntity>of(VictorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VictorEntity::new)
-
-					.sized(0.4f, 0.4f));
 	public static final RegistryObject<EntityType<AnghelEntity>> ANGHEL = register("anghel",
 			EntityType.Builder.<AnghelEntity>of(AnghelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AnghelEntity::new)
 
@@ -45,7 +40,6 @@ public class ModModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			IlieEntity.init();
-			VictorEntity.init();
 			AnghelEntity.init();
 		});
 	}
@@ -53,7 +47,6 @@ public class ModModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ILIE.get(), IlieEntity.createAttributes().build());
-		event.put(VICTOR.get(), VictorEntity.createAttributes().build());
 		event.put(ANGHEL.get(), AnghelEntity.createAttributes().build());
 	}
 }
