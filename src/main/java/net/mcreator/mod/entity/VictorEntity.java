@@ -122,7 +122,7 @@ public class VictorEntity extends PathfinderMob {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		WhenVictorDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		WhenVictorDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
