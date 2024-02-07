@@ -46,7 +46,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Ilie.spawn_egg"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

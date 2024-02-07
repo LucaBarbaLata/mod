@@ -33,7 +33,6 @@ public class ModModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(ModModItems.ILIE_SPAWN_EGG.get());
 			tabData.accept(ModModItems.VICTOR_SPAWN_EGG.get());
 			tabData.accept(ModModItems.SUBSTANA_ROZ_SPAWN_EGG.get());
 		}

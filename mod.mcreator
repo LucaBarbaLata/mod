@@ -26,22 +26,6 @@
       }
     },
     {
-      "name": "Ilie",
-      "type": "livingentity",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ilie",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mod/entity/IlieEntity.java",
-          "src/main/resources/assets/mod/models/item/ilie_spawn_egg.json",
-          "src/main/resources/data/mod/forge/biome_modifier/ilie_biome_modifier.json",
-          "src/main/java/net/mcreator/mod/client/renderer/IlieRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "Trash",
       "type": "block",
       "sortid": 4,
@@ -105,19 +89,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "CraftIlie",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "craft_ilie",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mod/recipes/craft_ilie.json"
         ]
       }
     },
@@ -199,9 +170,7 @@
       "entity.mod.victor": "Victor",
       "item_group.mod.mod": "Mod",
       "block.mod.trash": "Pietre",
-      "item.mod.ilie_spawn_egg": "Ilie Spawn Egg",
       "entity.mod.substana_roz": "Substana Roz",
-      "entity.mod.ilie": "Ilie",
       "item.mod.substana_roz_spawn_egg": "Substana Roz Spawn Egg",
       "subtitles.superhot": "Super Hot",
       "entity.minecraft.villager.mod.pietrar": "Pietrar",

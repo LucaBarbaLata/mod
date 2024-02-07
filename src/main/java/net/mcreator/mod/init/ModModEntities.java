@@ -18,16 +18,11 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.mod.entity.VictorEntity;
 import net.mcreator.mod.entity.SubstanaRozEntity;
-import net.mcreator.mod.entity.IlieEntity;
 import net.mcreator.mod.ModMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ModMod.MODID);
-	public static final RegistryObject<EntityType<IlieEntity>> ILIE = register("ilie",
-			EntityType.Builder.<IlieEntity>of(IlieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IlieEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<VictorEntity>> VICTOR = register("victor",
 			EntityType.Builder.<VictorEntity>of(VictorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VictorEntity::new)
 
@@ -44,7 +39,6 @@ public class ModModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			IlieEntity.init();
 			VictorEntity.init();
 			SubstanaRozEntity.init();
 		});
@@ -52,7 +46,6 @@ public class ModModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(ILIE.get(), IlieEntity.createAttributes().build());
 		event.put(VICTOR.get(), VictorEntity.createAttributes().build());
 		event.put(SUBSTANA_ROZ.get(), SubstanaRozEntity.createAttributes().build());
 	}

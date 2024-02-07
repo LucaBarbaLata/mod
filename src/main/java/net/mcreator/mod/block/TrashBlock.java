@@ -22,8 +22,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mod.init.ModModItems;
-
 import java.util.List;
 import java.util.Collections;
 
@@ -74,6 +72,6 @@ public class TrashBlock extends Block implements SimpleWaterloggedBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(ModModItems.ILIE_SPAWN_EGG.get()));
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

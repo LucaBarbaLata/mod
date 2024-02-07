@@ -11,13 +11,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mod.client.renderer.VictorRenderer;
 import net.mcreator.mod.client.renderer.SubstanaRozRenderer;
-import net.mcreator.mod.client.renderer.IlieRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(ModModEntities.ILIE.get(), IlieRenderer::new);
 		event.registerEntityRenderer(ModModEntities.VICTOR.get(), VictorRenderer::new);
 		event.registerEntityRenderer(ModModEntities.SUBSTANA_ROZ.get(), SubstanaRozRenderer::new);
 	}
