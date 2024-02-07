@@ -21,7 +21,6 @@ public class ModModItems {
 	public static final RegistryObject<Item> SUPER_HOT = REGISTRY.register("super_hot", () -> new SuperHotItem());
 	public static final RegistryObject<Item> ILIE_SPAWN_EGG = REGISTRY.register("ilie_spawn_egg", () -> new ForgeSpawnEggItem(ModModEntities.ILIE, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> TRASH = block(ModModBlocks.TRASH);
-	public static final RegistryObject<Item> ANGHEL_SPAWN_EGG = REGISTRY.register("anghel_spawn_egg", () -> new ForgeSpawnEggItem(ModModEntities.ANGHEL, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> VICTOR_SPAWN_EGG = REGISTRY.register("victor_spawn_egg", () -> new ForgeSpawnEggItem(ModModEntities.VICTOR, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> SUBSTANA_ROZ_SPAWN_EGG = REGISTRY.register("substana_roz_spawn_egg", () -> new ForgeSpawnEggItem(ModModEntities.SUBSTANA_ROZ, -65281, -1, new Item.Properties()));
 
