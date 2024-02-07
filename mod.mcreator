@@ -165,6 +165,36 @@
           "src/main/java/net/mcreator/mod/entity/VictorEntity.java"
         ]
       }
+    },
+    {
+      "name": "SubstanaRoz",
+      "type": "animatedentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "substana_roz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mod/entity/SubstanaRozEntity.java",
+          "src/main/java/net/mcreator/mod/entity/model/SubstanaRozModel.java",
+          "src/main/resources/assets/mod/models/item/substana_roz_spawn_egg.json",
+          "src/main/resources/data/mod/forge/biome_modifier/substana_roz_biome_modifier.json",
+          "src/main/java/net/mcreator/mod/client/renderer/SubstanaRozRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftSuperHot",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_super_hot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod/recipes/craft_super_hot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -188,7 +218,9 @@
       "block.mod.trash": "Pietre",
       "item.mod.anghel_spawn_egg": "Anghel Spawn Egg",
       "item.mod.ilie_spawn_egg": "Ilie Spawn Egg",
+      "entity.mod.substana_roz": "Substana Roz",
       "entity.mod.ilie": "Ilie",
+      "item.mod.substana_roz_spawn_egg": "Substana Roz Spawn Egg",
       "subtitles.superhot": "Super Hot",
       "entity.minecraft.villager.mod.pietrar": "Pietrar",
       "item.mod.super_hot.desc": "SUPER HOT BABY YEAHHH"

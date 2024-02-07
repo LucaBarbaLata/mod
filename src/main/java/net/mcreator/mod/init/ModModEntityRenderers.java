@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mod.client.renderer.VictorRenderer;
+import net.mcreator.mod.client.renderer.SubstanaRozRenderer;
 import net.mcreator.mod.client.renderer.IlieRenderer;
 import net.mcreator.mod.client.renderer.AnghelRenderer;
 
@@ -20,5 +21,6 @@ public class ModModEntityRenderers {
 		event.registerEntityRenderer(ModModEntities.ILIE.get(), IlieRenderer::new);
 		event.registerEntityRenderer(ModModEntities.ANGHEL.get(), AnghelRenderer::new);
 		event.registerEntityRenderer(ModModEntities.VICTOR.get(), VictorRenderer::new);
+		event.registerEntityRenderer(ModModEntities.SUBSTANA_ROZ.get(), SubstanaRozRenderer::new);
 	}
 }
