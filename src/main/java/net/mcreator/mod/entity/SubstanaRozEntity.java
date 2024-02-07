@@ -144,7 +144,7 @@ public class SubstanaRozEntity extends PathfinderMob implements GeoEntity {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEFINED;
+		return MobType.WATER;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {

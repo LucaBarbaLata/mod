@@ -51,7 +51,7 @@
       "value": ""
     },
     "mobBehaviourType": "Creature",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "WATER",
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
